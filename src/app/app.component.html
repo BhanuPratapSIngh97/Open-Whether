@@ -1,0 +1,94 @@
+<div class="vw-100 vh-100 background">
+  <div class="mb-0 p-0 text-center">
+    <img src="../assets/images/{{time}}.svg" alt="" style="height: 100px; width: 110px;">
+  </div>
+  <div class="container">
+    <div class="text-center justify-content-center">
+      <h1>{{title}}</h1>
+      <hr>
+    </div>
+    <div class="row">
+      <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+        <div class="form-group mb-5 d-flex justify-content-center ">
+          <input type="text" class="inputClass form-control border-0 border-bottom bg-transparent w-50" name="cityname"
+            id="cityname" placeholder="Type a city name" ngModel required>
+          <button type="submit" class="ml-3 border-0 bg-transparent" [disabled]="!myForm.valid"
+            style="margin: 2px;"><img src="../assets/images/search.svg" alt=""></button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>
+          {{Country}}
+        </h3>
+        <h1 style="margin-left: 45px;">
+          {{City}}
+        </h1>
+        <h3>
+          {{Date}}
+        </h3>
+        <h3>
+          Wind : {{Wind_Speed}}
+        </h3>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="row" style="margin-top: -50px;">
+          <img src="../assets/images/{{icon}}.svg" alt="" class="image !importent">
+        </div>
+
+        <div class="row">
+          <marquee behavior="alternate">
+            <h3>{{Description}}</h3>
+          </marquee>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="row">
+          <h3>{{Humidity}} <img src="../assets/images/humidity.png" alt=""></h3>
+          <h3> {{Weather}} </h3>
+        </div>
+        <div class="row">
+          <h3 style="font-size: 100px; font-weight: bolder; ">
+            {{Temp}}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="row"> -->
+
+<!-- <div class="col-md-6"> -->
+
+<!-- <div class="transbox"> -->
+<!-- <p>Country : {{Country}}</p> -->
+<!-- <p>City : {{City}}</p> -->
+<!-- <p>Temp : {{Temp}}</p> -->
+<!-- </div> -->
+
+<!-- </div> -->
+
+<!-- <div class="col-md-6"> -->
+
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="transbox"> -->
+<!-- <p>Humidity : {{Humidity}}</p> -->
+<!-- </div> -->
+<!-- <div class="transbox"> -->
+<!-- <p>Wind_Speed : {{Wind_Speed}}</p> -->
+<!-- </div> -->
+<!-- <div class="transbox"> -->
+<!-- <p>Weather : {{Weather}}</p> -->
+<!-- </div> -->
+<!-- <div class="transbox"> -->
+<!-- <p>Description : {{Description}}</p> -->
+<!-- </div> -->
+<!-- </div> -->
