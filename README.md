@@ -12,3 +12,5 @@ Steps for run the project........
 3. Then run `npm start` for a dev server.. 
 ##
 4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##
+5. visit https://owhether.web.app/ for live
